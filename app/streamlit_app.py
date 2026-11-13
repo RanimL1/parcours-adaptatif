@@ -16,7 +16,10 @@ from src.data_loader import load
 from src.pipeline import build
 
 # Chemins absolus des données
-DATA_PATH = BASE_DIR / "data" / "processed" / "interactions_real_rich_processed.csv"
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+DATA_PATH = BASE_DIR / "data" / "raw" / "interactions_real_rich_processed.csv"
+
 NAMES_PATH = BASE_DIR / "data" / "raw" / "skill_names.csv"
 
 st.set_page_config(
